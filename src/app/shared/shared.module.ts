@@ -4,11 +4,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { CoreModule } from '../core/core.module';
+import { MenuComponent } from './components/menu/menu.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    MenuComponent
+  ],
   imports: [
     CommonModule,
     FormsModule,
@@ -17,6 +20,9 @@ import { CoreModule } from '../core/core.module';
     HttpClientModule,
     CoreModule
 
+  ],
+  exports: [
+    MenuComponent
   ]
 })
 export class SharedModule { }

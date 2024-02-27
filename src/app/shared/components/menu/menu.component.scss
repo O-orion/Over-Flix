@@ -1,0 +1,30 @@
+.menu {
+  width: 100%;
+  background-color: rgba(51, 50, 50, 0.082);
+  height: 80px;
+
+  padding: 0 10px 0 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+  .menu-lista {
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    gap: 50px;
+
+    h1 {
+      margin: 0;
+    }
+
+    ul {
+      display: flex;
+      gap: 20px
+    }
+  }
+
+}
