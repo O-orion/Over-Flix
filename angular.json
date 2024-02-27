@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "over-flix:build:production"
+              "buildTarget": "over-flix:build:production"
             },
             "development": {
-              "browserTarget": "over-flix:build:development"
+              "buildTarget": "over-flix:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "over-flix:build"
+            "buildTarget": "over-flix:build"
           }
         },
         "test": {
