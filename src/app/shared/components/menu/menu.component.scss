@@ -1,7 +1,7 @@
 .menu {
   width: 100%;
   background-color: rgba(51, 50, 50, 0.082);
-  height: 80px;
+  height: 60px;
 
   padding: 0 10px 0 10px;
 
@@ -23,7 +23,23 @@
 
     ul {
       display: flex;
-      gap: 20px
+      gap: 20px;
+
+      li {
+        a {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .menu-opcoes {
+    display: flex;
+    align-items: center;
+
+    p {
+      padding: 0;
+      margin: 0;
     }
   }
 
