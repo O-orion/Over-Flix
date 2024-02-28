@@ -84,6 +84,10 @@
 
       padding: 10px;
 
+      .menu-toggle-mobile {
+        display: none;
+      }
+
       ul > li {
         cursor: pointer;
       }
@@ -99,6 +103,14 @@
       ul {
 
         display: none;
+      }
+    }
+
+    .menu-opcoes {
+      .menu-toggle {
+        .menu-toggle-mobile {
+          display: block;
+        }
       }
     }
   }
