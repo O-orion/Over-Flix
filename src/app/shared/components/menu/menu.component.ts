@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-menu',
@@ -13,7 +13,13 @@ export class MenuComponent {
 
   }
 
-  menuToggle(): void {
+  menuToggle(event: Event ): void {
+    event.stopPropagation()
+    this.menuOpen = !this.menuOpen;
+  }
+
+  @HostListener('document:click')
+  documentClick(): void {
     this.menuOpen = !this.menuOpen;
   }
 

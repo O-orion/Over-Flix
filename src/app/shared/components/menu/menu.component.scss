@@ -3,7 +3,7 @@
   background-color: rgba(51, 50, 50, 0.082);
   height: 60px;
 
-  padding: 0 10px 0 10px;
+  padding: 0 30px 0 20px;
 
   display: flex;
   justify-content: space-between;
@@ -26,9 +26,32 @@
       gap: 20px;
 
       li {
+        position: relative;
+        transition: all 0.5s ease-in-out;
         a {
           cursor: pointer;
         }
+      }
+
+      li::before {
+        transition: all .5s ease-in-out;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        content: " ";
+        width: 0;
+        height: 1px;
+        background-color: white;
+      }
+
+      li:hover::before {
+
+        width: 100%;
+
+      }
+
+      li:hover {
+        color: rgb(206, 204, 204);
       }
     }
   }
@@ -60,7 +83,23 @@
       color: black;
 
       padding: 10px;
+
+      ul > li {
+        cursor: pointer;
+      }
     }
   }
 
+}
+
+@media screen and (max-width: 800px) {
+
+  .menu {
+    .menu-lista {
+      ul {
+
+        display: none;
+      }
+    }
+  }
 }

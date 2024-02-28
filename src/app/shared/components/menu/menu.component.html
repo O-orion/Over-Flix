@@ -12,17 +12,19 @@
 
   <div class="menu-opcoes">
     <p>Olá, Lucas</p>
-    <span class="material-symbols-outlined menu-botao" (click)="menuToggle()">
+    <span class="material-symbols-outlined menu-botao" (click)="menuToggle($event)">
       {{ menuOpen ?  'arrow_drop_up' : 'arrow_drop_down' }}
       </span>
 
-      <div class="menu-toggle">
-        <ul>
-          <li>Perfil</li>
-          <li>Configurações</li>
-          <li>Sair</li>
-        </ul>
-      </div>
+      @if(menuOpen) {
+        <div  class="menu-toggle">
+          <ul>
+            <li>Perfil</li>
+            <li>Configurações</li>
+            <li>Sair</li>
+          </ul>
+        </div>
+      }
   </div>
 
 </nav>
