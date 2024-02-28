@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class MenuComponent {
 
+  menuOpen:  boolean = false;
+
+  constructor() {
+
+  }
+
+  menuToggle(): void {
+    this.menuOpen = !this.menuOpen;
+  }
+
 }

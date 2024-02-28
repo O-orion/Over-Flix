@@ -36,10 +36,30 @@
   .menu-opcoes {
     display: flex;
     align-items: center;
+    position: relative;
 
     p {
       padding: 0;
       margin: 0;
+    }
+
+    .menu-botao {
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+    }
+
+    .menu-toggle {
+      position: absolute;
+      top: 20px;
+      left: -30px;
+
+      border-radius: 2px;
+      width: 120px;
+
+      background: rgb(247, 247, 247);
+      color: black;
+
+      padding: 10px;
     }
   }
 

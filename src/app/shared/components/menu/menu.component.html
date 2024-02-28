@@ -12,8 +12,17 @@
 
   <div class="menu-opcoes">
     <p>Olá, Lucas</p>
-    <span class="material-symbols-outlined">
-      arrow_drop_down
+    <span class="material-symbols-outlined menu-botao" (click)="menuToggle()">
+      {{ menuOpen ?  'arrow_drop_up' : 'arrow_drop_down' }}
       </span>
+
+      <div class="menu-toggle">
+        <ul>
+          <li>Perfil</li>
+          <li>Configurações</li>
+          <li>Sair</li>
+        </ul>
+      </div>
   </div>
+
 </nav>
