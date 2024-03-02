@@ -5,12 +5,13 @@ import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { CoreModule } from '../core/core.module';
 import { MenuComponent } from './components/menu/menu.component';
-
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 
 @NgModule({
   declarations: [
-    MenuComponent
+    MenuComponent,
+    CarouselComponent
   ],
   imports: [
     CommonModule,
@@ -22,7 +23,8 @@ import { MenuComponent } from './components/menu/menu.component';
 
   ],
   exports: [
-    MenuComponent
+    MenuComponent,
+    CarouselComponent
   ]
 })
 export class SharedModule { }

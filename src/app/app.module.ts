@@ -7,7 +7,8 @@ import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FeaturesModule } from './features/features.module';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     SharedModule,
     RouterModule,
     HttpClientModule,
-    NgbModule
+    FeaturesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -20,7 +20,9 @@ export class MenuComponent {
 
   @HostListener('document:click')
   documentClick(): void {
-    this.menuOpen = !this.menuOpen;
+    if(this.menuOpen == true) {
+      this.menuOpen = false;
+    }
   }
 
 }
