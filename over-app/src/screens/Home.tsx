@@ -1,6 +1,6 @@
 import { Box, Text } from "native-base";
 import { TEMAS } from "../styles/temas";
-import Menu from "../components/menu";
+import Menu from "../components/navBar";
 
 export default function Home() {
   return (
