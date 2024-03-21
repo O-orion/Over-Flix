@@ -6,7 +6,7 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 export default function NavBar ( ) {
   return (
     <Box  flexDir='row' pl={2} pr={2}  justifyContent='space-between' alignItems='center'  bg={TEMAS.colors.black[100]} shadow={3} h={50} w='100%'>
-      <Text fontWeight='bold' color={TEMAS.colors.silver} alignSelf='center' >Over-
+      <Text fontSize={17} fontWeight='bold' color={TEMAS.colors.silver} alignSelf='center' >Over-
         <Text fontStyle='italic' color={TEMAS.colors.red}>Flix</Text>
       </Text>
 
