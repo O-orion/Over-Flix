@@ -1,4 +1,11 @@
 .container {
   padding: 10px 10px 10px 10px;
   overflow: hidden;
+  font-family: "Tauri", sans-serif;
+  font-weight: 400;
+
+  p {
+    margin-bottom: 5px;
+    margin-left: 6px;
+  }
 }

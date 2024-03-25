@@ -23,7 +23,7 @@ export class CarouselComponent implements OnInit {
     {nome: 'Solo', img: 'https://image.tmdb.org/t/p/original/nzSJcUFe9a6lF6nxAyqP2cGgYjt.jpg'},
   ];
 
-  totalFilmes:number = 8;
+  totalFilmes:number = 9;
   paginaAtual:number = 0;
 
   ngOnInit(): void {
@@ -31,15 +31,21 @@ export class CarouselComponent implements OnInit {
   }
 
   public nextFilmes(): void {
-    this.totalFilmes ++
-    this.paginaAtual ++
-    this.atualizarFilmes()
+
+    if ( this.totalFilmes < this.filmes.length) {
+      console.log(`${this.paginaAtual} / ${this.totalFilmes}`)
+      this.totalFilmes ++
+      this.paginaAtual ++
+      this.atualizarFilmes()
+    }
   }
 
   public returnFilmes(): void {
-    this.totalFilmes --;
-    this.paginaAtual --;
-    this.atualizarFilmes()
+    if ( this.paginaAtual > 0) {
+      this.totalFilmes --;
+      this.paginaAtual --;
+      this.atualizarFilmes()
+    }
   }
 
   private atualizarFilmes(): void {
