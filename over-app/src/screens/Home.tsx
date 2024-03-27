@@ -6,9 +6,12 @@ import FilmeDestaque from "../components/filmeDestaque";
 
 export default function Home() {
   return (
-    <ScrollView w='100%' bg={TEMAS.colors.black[500]} flex={1}>
+    <ScrollView bg={TEMAS.colors.black[500]} flex={1}>
       <Menu />
       <FilmeDestaque />
+      <ListaFilme />
+      <ListaFilme />
+      <ListaFilme />
       <ListaFilme />
     </ScrollView>
   )
