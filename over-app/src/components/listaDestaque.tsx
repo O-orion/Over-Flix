@@ -1,7 +1,7 @@
 import { Box, Card, Text, ScrollView, Image, Link } from "native-base";
 import { TEMAS } from "../styles/temas";
 
-export default function FilmesDestaque() {
+export default function ListaFilme() {
   return (
     <Box  mt={3} w='100%' >
       <Box flexDir='row'  justifyContent='space-between'  alignItems='center'>
