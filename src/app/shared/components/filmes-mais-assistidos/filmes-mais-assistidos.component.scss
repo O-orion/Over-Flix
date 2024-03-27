@@ -1,8 +1,10 @@
 .container {
+  height: auto;
+  padding: 10px;
   width: 100%;
   display: flex;
   flex-direction: column;
-
+  background: linear-gradient(to bottom, #131212 0%, #66666660 50%, #131212 100%);;
   align-items: center;
 
   .titulo-container {
