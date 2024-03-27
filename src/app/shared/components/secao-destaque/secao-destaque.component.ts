@@ -1,12 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-secao-destaque',
-  standalone: true,
-  imports: [],
+  standalone: false,
   templateUrl: './secao-destaque.component.html',
   styleUrl: './secao-destaque.component.scss'
 })
 export class SecaoDestaqueComponent {
-
+  @Input() titulo: string = ''
 }

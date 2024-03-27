@@ -6,12 +6,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { CoreModule } from '../core/core.module';
 import { MenuComponent } from './components/menu/menu.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { SecaoDestaqueComponent } from './components/secao-destaque/secao-destaque.component';
 
 
 @NgModule({
   declarations: [
     MenuComponent,
-    CarouselComponent
+    CarouselComponent,
+    SecaoDestaqueComponent
   ],
   imports: [
     CommonModule,
@@ -24,7 +26,8 @@ import { CarouselComponent } from './components/carousel/carousel.component';
   ],
   exports: [
     MenuComponent,
-    CarouselComponent
+    CarouselComponent,
+    SecaoDestaqueComponent
   ]
 })
 export class SharedModule { }
