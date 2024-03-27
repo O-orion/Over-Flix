@@ -7,13 +7,15 @@ import { CoreModule } from '../core/core.module';
 import { MenuComponent } from './components/menu/menu.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { SecaoDestaqueComponent } from './components/secao-destaque/secao-destaque.component';
+import { FilmesMaisAssistidosComponent } from './components/filmes-mais-assistidos/filmes-mais-assistidos.component';
 
 
 @NgModule({
   declarations: [
     MenuComponent,
     CarouselComponent,
-    SecaoDestaqueComponent
+    SecaoDestaqueComponent,
+    FilmesMaisAssistidosComponent
   ],
   imports: [
     CommonModule,
@@ -27,7 +29,8 @@ import { SecaoDestaqueComponent } from './components/secao-destaque/secao-destaq
   exports: [
     MenuComponent,
     CarouselComponent,
-    SecaoDestaqueComponent
+    SecaoDestaqueComponent,
+    FilmesMaisAssistidosComponent
   ]
 })
 export class SharedModule { }
