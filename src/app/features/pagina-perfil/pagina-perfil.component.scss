@@ -1,0 +1,83 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+
+  .perfil-container {
+    width: 50%;
+    background-color: #cccccc04;
+    border-radius: 10px;
+
+    .perfil-image {
+      padding: 5px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      img {
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+      }
+
+    }
+
+    .perfil-form {
+      margin-bottom: 2rem;
+      width: 100%;
+
+      display: flex;
+      justify-content: center;
+
+      form {
+        width: 50%;
+
+      }
+
+      .perfil-campo-form {
+        margin-top: 9px;
+        display: flex;
+        flex-direction: column;
+
+        .label-form {
+          width: auto;
+          padding: 5px;
+          background-color: #0000001e;
+          font-weight: 600;
+        }
+
+        .input-form {
+          width: 100%;
+          margin-left: 5px;
+          padding: 10px;
+          font-weight: 500;
+          border-radius: 5px;
+        }
+
+      }
+
+      .perfil-form-acoes {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .perfil-button-salvar {
+          width: 50%;
+          height: 30px;
+          border: none;
+          border-radius: 10px;
+          text-transform: uppercase;
+          color: white;
+          font-weight: 600;
+          background-color: rgba(2, 131, 23, 0.918);
+        }
+
+      }
+
+    }
+
+  }
+
+}

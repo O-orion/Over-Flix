@@ -4,11 +4,13 @@ import { CoreModule } from '../core/core.module';
 import { SharedModule } from '../shared/shared.module';
 import { HomeComponent } from './home/home.component';
 import { PaginaFilmeComponent } from './pagina-filme/pagina-filme.component';
+import { PaginaPerfilComponent } from './pagina-perfil/pagina-perfil.component';
 
 @NgModule({
   declarations: [
     HomeComponent,
-    PaginaFilmeComponent
+    PaginaFilmeComponent,
+    PaginaPerfilComponent
   ],
   imports: [
     CommonModule,
