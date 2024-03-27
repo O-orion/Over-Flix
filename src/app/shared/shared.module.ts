@@ -8,6 +8,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { SecaoDestaqueComponent } from './components/secao-destaque/secao-destaque.component';
 import { FilmesMaisAssistidosComponent } from './components/filmes-mais-assistidos/filmes-mais-assistidos.component';
+import { PlayerFilmeComponent } from './components/player-filme/player-filme.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { FilmesMaisAssistidosComponent } from './components/filmes-mais-assistid
     MenuComponent,
     CarouselComponent,
     SecaoDestaqueComponent,
-    FilmesMaisAssistidosComponent
+    FilmesMaisAssistidosComponent,
+    PlayerFilmeComponent
   ],
   imports: [
     CommonModule,
@@ -30,7 +32,8 @@ import { FilmesMaisAssistidosComponent } from './components/filmes-mais-assistid
     MenuComponent,
     CarouselComponent,
     SecaoDestaqueComponent,
-    FilmesMaisAssistidosComponent
+    FilmesMaisAssistidosComponent,
+    PlayerFilmeComponent
   ]
 })
 export class SharedModule { }
